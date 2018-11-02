@@ -78,6 +78,7 @@
                         @endif
                     @endauth
                         <a href="{{ route('about') }}">About</a>
+                        <a href="{{ route('contact') }}">Contact</a>
                 </div>
             @endif
 
