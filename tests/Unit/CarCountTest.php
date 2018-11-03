@@ -1,10 +1,11 @@
 <?php
 
 namespace Tests\Unit;
-use App\Car;
+
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\Car;
 
 class CarCountTest extends TestCase
 {
@@ -13,7 +14,7 @@ class CarCountTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testCarCount()
     {
         $count = Car::count();
         $this->assertEquals(50, $count);

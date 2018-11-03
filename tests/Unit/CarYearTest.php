@@ -1,10 +1,11 @@
 <?php
 
 namespace Tests\Unit;
-use App\Car;
+
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\Car;
 
 class CarYearTest extends TestCase
 {
@@ -13,7 +14,7 @@ class CarYearTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testCarYear()
     {
         $car = Car::find(1);
         $this->assertInternalType("int", $car->year);

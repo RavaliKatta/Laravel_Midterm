@@ -1,10 +1,11 @@
 <?php
 
 namespace Tests\Unit;
-use App\Car;
+
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\Car;
 
 class UpdateCarTest extends TestCase
 {

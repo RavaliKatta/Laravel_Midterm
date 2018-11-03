@@ -1,10 +1,11 @@
 <?php
 
 namespace Tests\Unit;
-use App\User;
+
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\User;
 
 class UpdateUserTest extends TestCase
 {
@@ -13,8 +14,8 @@ class UpdateUserTest extends TestCase
      *
      * @return void
      */
-    public function testUpdateUser(){
-
+    public function testUpdateUser()
+    {
         $user = User::find(1);
         $user->name = 'Steve Smith';
         $this->assertTrue($user->save());

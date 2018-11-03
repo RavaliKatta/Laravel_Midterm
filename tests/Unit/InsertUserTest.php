@@ -1,11 +1,12 @@
 <?php
 
 namespace Tests\Unit;
-use App\User;
+
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use App\User;
 
 class InsertUserTest extends TestCase
 {
@@ -15,16 +16,15 @@ class InsertUserTest extends TestCase
      *
      * @return void
      */
-    public function testUsers()
+    public function testInsertUser()
     {
         $user = new User();
         $user->name = 'Ravali Katta';
-        $user->email = 'Katta@gmail.com';
+        $user->email = 'kattaa@gmail.com';
         $user->email_verified_at = now();
         $user->password = 'katta';
         $user->remember_token = str_random(10);
         $this->assertTrue($user->save());
 
     }
-
 }

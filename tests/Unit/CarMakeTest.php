@@ -1,10 +1,11 @@
 <?php
 
 namespace Tests\Unit;
-use App\Car;
+
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\Car;
 
 class CarMakeTest extends TestCase
 {
@@ -13,7 +14,7 @@ class CarMakeTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testCarMake()
     {
         $car = Car::find(1);
         $this->assertContains($car->make, array('ford', 'toyota', 'honda'));
