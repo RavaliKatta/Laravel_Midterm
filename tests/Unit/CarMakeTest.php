@@ -1,21 +1,21 @@
 <?php
 
 namespace Tests\Unit;
-use App\User;
+use App\Car;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class UpdateUserTest extends TestCase
+class CarMakeTest extends TestCase
 {
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function testUpdateUser(){
-        $user = User::find(1);
-        $user->name = 'Steve Smith';
-        $this->assertTrue($user->save());
+    public function testExample()
+    {
+        $car = Car::find(1);
+        $this->assertContains($car->make, array('ford', 'toyota', 'honda'));
     }
 }
