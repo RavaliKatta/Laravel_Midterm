@@ -14,8 +14,7 @@ class CountRecordsTest extends TestCase
      * @return void
      */
     public function testCountUser(){
-        $user=User::all();
-        $user->count();
-        $this->assertEquals(50,count($user),"Should return 50 users");
+        $count = User::count();
+        $this->assertEquals(50, $count);
     }
 }

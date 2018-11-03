@@ -13,7 +13,7 @@ class UpdateCarTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testUpdateCar()
     {
         $car = Car::find(1);
         $car->year = 2000;
